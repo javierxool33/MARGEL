@@ -1,0 +1,161 @@
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 99%;
+    height: auto;
+    border: 1px solid black;
+    gap: 30px;
+    padding:10px;
+
+}
+
+/*..........................FRENTE........................................*/
+
+.frente{
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+    height: 27rem;
+    margin: 0;
+    overflow: hidden;
+    border:  dotted green;
+    object-fit: contain;
+}
+
+.frente:hover{
+    border: 35px solid rgb(75, 75, 75);
+    background-color:  rgb(75, 75, 75);
+    transition: border 1.5s, 1.5s; /* Aplica la transición para ambos */
+   
+}
+
+.frente-dev{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: stretch;
+    width: 99%;
+    height: 25rem;
+    margin: auto;
+    padding: 0%;
+   /* border: dashed rgb(11, 23, 61);*/
+}
+
+.logo{
+    display: flex;
+    width: 25%;
+    height: 99%;
+    overflow: hidden;
+    
+}
+
+.imagen-logo{
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.titulo{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 75%;
+    height: 99%;
+    overflow: hidden;
+}
+
+.margel{
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+@media screen and (max-width: 1125px) {
+    .frente-dev {
+        flex-direction: column; /* Cambia de fila a columna */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .logo, .titulo, .frente-dev {
+        width: 100%; /* Ambas ocupan todo el ancho */
+        height: -5%; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+     .frente {
+        width: 100%; /* Ambas ocupan todo el ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+
+
+     .frente-dev{
+        justify-content: center;
+        object-fit: cover;
+    }
+
+    .imagen-logo, .margel {
+        object-fit: contain; /* Asegúrate de que la imagen se ajuste bien */
+        object-fit: cover;
+    }
+}
+
+@media(max-width:1126px){
+    .logo, .titulo, .frente-dev {
+        width: 100%; /* Ambas ocupan todo el ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+        object-fit: cover;
+    }
+    
+}
+
+/*..........................FRENTE........................................*/
+
+
+.cuerpo{
+    display: flex;
+    width: 99%;
+    height: 27rem;
+    border:  dotted rgb(128, 0, 111);
+}
+
+.cuerpo-dev{
+    display: flex;
+    width: 99%;
+    height: 25rem;
+    margin: auto;
+
+    border: dashed green;
+}
+
+
+.pie{
+    display: flex;
+    width: 99%;
+    height: 27rem;
+    margin: auto;
+    border:  dotted rgb(189, 83, 22);
+}
+
+.pie-dev{
+    display: flex;
+    width: 99%;
+    height: 25rem;
+    margin: auto;
+
+    border: dashed green;
+}
